@@ -39,11 +39,17 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
         children: [
           ElevatedButton(
             onPressed: () {
+              print(
+                  "English sentence -> ${englishSentences_intro[widget.index!]}");
               hsc.setEnglishSentence(englishSentences_intro[widget.index!]);
+
               hsc.setDialogBoxTranslation(
                   translations_intro['Telugu']![hsc.englishSentence.value]!);
-              hsc.setFollowUpList(hsc.englishSentence.value,
-                  suggestions_intro[hsc.englishSentence.value]!);
+              print(
+                  "Dialogbox translation -> ${hsc.dialogBoxTranslation.value}");
+
+              // // hsc.setFollowUpList(hsc.englishSentence.value,
+              // //     suggestions_intro[hsc.englishSentence.value]!);
               showDialog(
                   context: context,
                   builder: (context) {
@@ -56,75 +62,78 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              FollowUpText(),
-                              SizedBox(
-                                height:
-                                    SizeConfig.getScreenSize(context).height *
-                                        0.2,
-                                width: SizeConfig.blockSizeHorizontal * 60,
-                                child: GridView.builder(
-                                    gridDelegate:
-                                        SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 2,
-                                      childAspectRatio: MediaQuery.of(context)
-                                              .size
-                                              .width /
-                                          (MediaQuery.of(context).size.height /
-                                              4),
-                                    ),
-                                    scrollDirection: Axis.vertical,
-                                    itemCount: hsc
-                                        .followUpList[
-                                            hsc.englishSentence.value]!
-                                        .length,
-                                    itemBuilder: (context, indexSugg) {
-                                      return GestureDetector(
-                                        onTap: () {
-                                          hsc.setEnglishSentence(
-                                              hsc.followUpList[hsc
-                                                  .englishSentence
-                                                  .value]![indexSugg]);
+                              //FollowUpText(),
+                              // SizedBox(
+                              //   height:
+                              //       SizeConfig.getScreenSize(context).height *
+                              //           0.2,
+                              //   width: SizeConfig.blockSizeHorizontal * 60,
+                              //   child: GridView.builder(
+                              //       gridDelegate:
+                              //           SliverGridDelegateWithFixedCrossAxisCount(
+                              //         crossAxisCount: 2,
+                              //         childAspectRatio: MediaQuery.of(context)
+                              //                 .size
+                              //                 .width /
+                              //             (MediaQuery.of(context).size.height /
+                              //                 4),
+                              //       ),
+                              //       scrollDirection: Axis.vertical,
+                              //       itemCount: hsc
+                              //           .followUpList[
+                              //               hsc.englishSentence.value]!
+                              //           .length,
+                              //       itemBuilder: (context, indexSugg) {
+                              //         return GestureDetector(
+                              //             onTap: () {
+                              //               hsc.setEnglishSentence(
+                              //                   hsc.followUpList[hsc
+                              //                       .englishSentence
+                              //                       .value]![indexSugg]);
 
-                                          hsc.setDialogBoxTranslation(
-                                              translations_intro['Telugu']![
-                                                  hsc.englishSentence.value]!);
-                                          hsc.setFollowUpList(
-                                              hsc.englishSentence.value,
-                                              suggestions_intro[
-                                                  hsc.englishSentence.value]!);
+                              //               hsc.setDialogBoxTranslation(
+                              //                   translations_intro['Telugu']![
+                              //                       hsc.englishSentence
+                              //                           .value]!);
+                              //               // hsc.setFollowUpList(
+                              //               //     hsc.englishSentence.value,
+                              //               //     suggestions_intro[hsc
+                              //               //         .englishSentence.value]!);
 
-                                          print(
-                                              "English sentence -> ${hsc.englishSentence.value},translations->${hsc.dialogBoxTranslation.value},followUpList->${hsc.followUpList}");
-                                        },
-                                        child: FollowUpHintWidget(
-                                            indexSugg: indexSugg),
-                                      );
-                                    }),
-                              )
+                              //               print(
+                              //                   "English sentence -> ${hsc.englishSentence.value},translations->${hsc.dialogBoxTranslation.value},followUpList->${hsc.followUpList}");
+                              //             },
+                              //             child: Container()
+                              //             // FollowUpHintWidget(
+                              //             //     indexSugg: indexSugg),
+                              //             );
+                              //       }),
+                              // )
                             ],
                           ),
                         ),
                         actions: [
                           GestureDetector(
-                            onTap: () async {
-                              // setState(() => ttsState = TtsState.playing);
-                              // int result = await audioPlayer
-                              //     .play(audioFiles['Telugu']![widget.index!]);
+                              onTap: () async {
+                                // setState(() => ttsState = TtsState.playing);
+                                // int result = await audioPlayer
+                                //     .play(audioFiles['Telugu']![widget.index!]);
 
-                              // if (result == 1) {
-                              //   print("passed");
-                              // } else {
-                              //   print("failed");
-                              // }
-                            },
-                            child: Align(
-                              child: Icon(
-                                Icons.volume_up,
-                                color: Colors.blueAccent,
-                                size: SizeConfig.blockSizeHorizontal * 5,
-                              ),
-                            ),
-                          )
+                                // if (result == 1) {
+                                //   print("passed");
+                                // } else {
+                                //   print("failed");
+                                // }
+                              },
+                              child: Container()
+                              //  Align(
+                              //   child: Icon(
+                              //     Icons.volume_up,
+                              //     color: Colors.blueAccent,
+                              //     size: SizeConfig.blockSizeHorizontal * 5,
+                              //   ),
+                              // ),
+                              )
                         ],
                       ),
                     );

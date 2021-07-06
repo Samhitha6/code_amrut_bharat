@@ -28,9 +28,9 @@ class _FollowUpHintWidgetState extends State<FollowUpHintWidget> {
           child: Center(
             child: Padding(
               padding: const EdgeInsets.all(3.0),
-              child: Text(
-                  suggestions_intro[hsc.englishSentence.value]![
-                      widget.indexSugg!],
+              child: Text("",
+                  // suggestions_intro[hsc.englishSentence.value]![
+                  //     widget.indexSugg!],
                   style: TextStyle(
                       color: Colors.black,
                       fontFamily: treMS,
