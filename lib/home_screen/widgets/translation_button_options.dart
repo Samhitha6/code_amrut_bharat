@@ -10,12 +10,16 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'package:get/get.dart';
 
 class TranslateButtonAndOptions extends StatefulWidget {
-  const TranslateButtonAndOptions({
-    Key? key,
-    @required this.index,
-  }) : super(key: key);
+  const TranslateButtonAndOptions(
+      {Key? key,
+      required this.sentence,
+      required this.languageSelected,
+      required this.translations_module})
+      : super(key: key);
 
-  final int? index;
+  final String sentence;
+  final String languageSelected;
+  final Map<String, Map<String, String>> translations_module;
 
   @override
   _TranslateButtonAndOptionsState createState() =>
@@ -39,17 +43,16 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
         children: [
           ElevatedButton(
             onPressed: () {
-              print(
-                  "English sentence -> ${englishSentences_intro[widget.index!]}");
-              hsc.setEnglishSentence(englishSentences_intro[widget.index!]);
+              hsc.setEnglishSentence(widget.sentence);
+              print("English sentence -> ${hsc.englishSentence.value}");
 
-              hsc.setDialogBoxTranslation(
-                  translations_intro['Telugu']![hsc.englishSentence.value]!);
+              hsc.setDialogBoxTranslation(translations_intro[
+                  widget.languageSelected]![hsc.englishSentence.value]!);
               print(
                   "Dialogbox translation -> ${hsc.dialogBoxTranslation.value}");
 
-              // // hsc.setFollowUpList(hsc.englishSentence.value,
-              // //     suggestions_intro[hsc.englishSentence.value]!);
+              // hsc.setFollowUpList(hsc.englishSentence.value,
+              //     suggestions_intro[hsc.englishSentence.value]!);
               showDialog(
                   context: context,
                   builder: (context) {

@@ -12,11 +12,18 @@ class RouteGenerator {
       case rSplash:
         return MaterialPageRoute(builder: (context) => SplashScreen());
       case rHome:
-        return MaterialPageRoute(builder: (context) => HomeScreen());
+        List<String> languageNmodule = settings.arguments as List<String>;
+        return MaterialPageRoute(
+            builder: (context) => HomeScreen(
+                languageSelected: languageNmodule[0],
+                moduleSelected: languageNmodule[1]));
       case rSelectLanguage:
         return MaterialPageRoute(builder: (context) => SelectLanguage());
       case rSelectModule:
-        return MaterialPageRoute(builder: (context) => SelectModule());
+        String languageSelected = settings.arguments as String;
+        return MaterialPageRoute(
+            builder: (context) =>
+                SelectModule(languageSelected: languageSelected));
 
       default:
         return MaterialPageRoute(

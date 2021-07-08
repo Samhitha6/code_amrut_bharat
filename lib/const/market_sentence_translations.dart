@@ -143,7 +143,7 @@ const Map<String, Map<String, String>> translations_market = {
         "நீங்கள் எனக்கு உதவ முடியுமா? (Nīṅkaḷ eṉakku utava muṭiyumā?)",
     "Where is the shopping cart?": "வணிக வண்டி எங்கே? (Vaṇika vaṇṭi eṅkē?)",
   },
-  "Bengali": {
+  "Bangla": {
     "I want to buy this.": "আমি এই কিনতে চাই. (Āmi ē'i kinatē cā'i.)",
     "I want to return this.": "এই ফিরে দিতে চান (Ē'i phirē ditē cāna)",
     "How much does this cost": "এটার দাম কত (Ēṭāra dāma kata)",
@@ -178,7 +178,7 @@ const Map<String, Map<String, String>> translations_market = {
     "Where is the shopping cart?":
         "আপনি কি আমাকে সাহায্য করতে পারেন? (Āpani ki āmākē sāhāyya karatē pārēna?)",
   },
-  "Malyalam": {
+  "Malayalam": {
     "I want to buy this.": "എനിക്ക് ഇത് വാങ്ങണം (enikk it vāṅṅaṇaṁ)",
     "I want to return this.":
         "ഇത് തിരികെ നൽകാൻ ഞാൻ ആഗ്രഹിക്കുന്നു (it tirike nalkān ñān āgrahikkunnu)",

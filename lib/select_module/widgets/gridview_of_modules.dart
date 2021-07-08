@@ -4,12 +4,12 @@ import 'package:amrut_bharat/navigation/navigation_const.dart';
 import 'package:flutter/material.dart';
 
 class GridViewOfModules extends StatelessWidget {
-  const GridViewOfModules({
-    Key? key,
-    required this.modules,
-  }) : super(key: key);
+  const GridViewOfModules(
+      {Key? key, required this.modules, required this.languageSelected})
+      : super(key: key);
 
   final List<String> modules;
+  final String languageSelected;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,8 @@ class GridViewOfModules extends StatelessWidget {
             itemBuilder: (context, index) {
               return GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, rHome);
+                  List<String> arguments = [languageSelected, modules[index]];
+                  Navigator.pushNamed(context, rHome, arguments: arguments);
                 },
                 child: Container(
                   decoration: BoxDecoration(

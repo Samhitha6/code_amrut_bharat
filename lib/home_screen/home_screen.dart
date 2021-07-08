@@ -1,31 +1,61 @@
+import 'package:amrut_bharat/const/food_sentence_translations.dart';
 import 'package:amrut_bharat/const/intro_sentence_translations.dart';
+import 'package:amrut_bharat/const/market_sentence_translations.dart';
+import 'package:amrut_bharat/const/modules.dart';
 import 'package:amrut_bharat/const/style.dart';
+import 'package:amrut_bharat/const/travel_sentence_translations.dart';
 import 'package:amrut_bharat/const/utils.dart';
-import 'package:amrut_bharat/select_module/widgets/brand_logos.dart';
+import 'package:amrut_bharat/select_language/widgets/institute_logos.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/translation_button_options.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatelessWidget {
+  HomeScreen(
+      {Key? key, required this.languageSelected, required this.moduleSelected})
+      : super(key: key);
+  final String languageSelected;
+  final String moduleSelected;
+  List<String> englishSentences_module = [];
+  Map<String, Map<String, String>> translations_module = {};
 
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
+  void chooseEnglishLangByModule() {
+    if (moduleSelected == Modules.Introduction) {
+      englishSentences_module = englishSentences_intro;
+    } else if (moduleSelected == Modules.Food) {
+      englishSentences_module = englishSentences_food;
+    } else if (moduleSelected == Modules.Market) {
+      englishSentences_module = englishSentences_market;
+    } else if (moduleSelected == Modules.Travel) {
+      englishSentences_module = englishSentences_travel;
+    }
+  }
 
-class _HomeScreenState extends State<HomeScreen> {
-  //String? _dropDownValue = "";
+  void chooseTranslatingLangByModule() {
+    if (moduleSelected == Modules.Introduction) {
+      translations_module = translations_intro;
+    } else if (moduleSelected == Modules.Food) {
+      translations_module = translations_food;
+    } else if (moduleSelected == Modules.Market) {
+      translations_module = translations_market;
+    } else if (moduleSelected == Modules.Travel) {
+      translations_module = translations_travel;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    chooseEnglishLangByModule();
+    chooseTranslatingLangByModule();
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Brand_logos(),
+          InstituteLogos(),
           //CustomAppBar(title: "Amrut Bharat"),
           Expanded(
             child: ListView.builder(
-                itemCount: englishSentences_intro.length,
+                itemCount: englishSentences_module.length,
                 itemBuilder: (context, index) => Container(
                       margin: EdgeInsets.only(
                           left: 50, right: 50, top: 10, bottom: 10),
@@ -37,8 +67,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         leading: LangIndicator(),
                         title: EnglishSentence(
                             index: index,
-                            englishSentences: englishSentences_intro),
-                        trailing: TranslateButtonAndOptions(index: index),
+                            englishSentences: englishSentences_module),
+                        trailing: TranslateButtonAndOptions(
+                          sentence: englishSentences_module[index],
+                          languageSelected: languageSelected,
+                          translations_module: translations_module,
+                        ),
                       ),
                     )),
           )
