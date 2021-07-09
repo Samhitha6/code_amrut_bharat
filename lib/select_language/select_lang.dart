@@ -25,6 +25,9 @@ class SelectLanguage extends StatelessWidget {
         body: Column(
           children: [
             InstituteLogos(),
+            SizedBox(
+              height: SizeConfig.getScreenSize(context).height * 0.1,
+            ),
             SelectALanguage(),
             SizedBox(
               height: SizeConfig.getScreenSize(context).height * 0.05,

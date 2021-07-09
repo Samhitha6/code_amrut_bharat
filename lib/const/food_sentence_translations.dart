@@ -285,23 +285,3 @@ const Map<String, List<String>> audioFiles_intro = {
     "assets/audio/see you later.mp4"
   ]
 };
-
-// const Map<String, List<String>> suggestions_intro = {
-//   'My Name is ___': [
-//     'What Is Your Name?',
-//     'How Are You Doing?',
-//   ],
-//   'Good Morning!': [
-//     'How Are You Doing?',
-//     'What Is Your Name?',
-//     'Are You Vaccinated?',
-//     'See You Later'
-//   ],
-//   'Are You Vaccinated?': ['How Are You Doing?'],
-//   "I will get vaccinated": ["Are You Vaccinated?"],
-//   'I am vaccinated': ["Are You Vaccinated"],
-//   'How Are You Doing?': ['Are You Vaccinated?', 'See You Later'],
-//   'What Is Your Name?': ['How Are You Doing?', 'Are You Vaccinated?'],
-//   "See You Later": ['Okay'],
-//   "Okay": ['See You Later']
-// };

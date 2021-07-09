@@ -149,7 +149,7 @@ const Map<String, Map<String, String>> translations_travel = {
     "it is hot/cold here":
         "இது இங்கே வெப்பமாக / குளிராக இருக்கிறது (Itu iṅkē veppamāka/ kuḷirāka irukkiṟatu)",
   },
-  "Malyalam": {
+  "Malayalam": {
     "Can you show me the way to ---":
         "ഇതിലേക്കുള്ള വഴി കാണിച്ചുതരാമോ (itilēkkuḷḷa vaḻi kāṇiccutarāmēā)",
     "Where can i get the bus?":

@@ -308,22 +308,46 @@ const Map<String, List<String>> audioFiles_intro = {
   ]
 };
 
-// const Map<String, List<String>> suggestions_intro = {
-//   'My Name is ___': [
-//     'What Is Your Name?',
-//     'How Are You Doing?',
-//   ],
-//   'Good Morning!': [
-//     'How Are You Doing?',
-//     'What Is Your Name?',
-//     'Are You Vaccinated?',
-//     'See You Later'
-//   ],
-//   'Are You Vaccinated?': ['How Are You Doing?'],
-//   "I will get vaccinated": ["Are You Vaccinated?"],
-//   'I am vaccinated': ["Are You Vaccinated"],
-//   'How Are You Doing?': ['Are You Vaccinated?', 'See You Later'],
-//   'What Is Your Name?': ['How Are You Doing?', 'Are You Vaccinated?'],
-//   "See You Later": ['Okay'],
-//   "Okay": ['See You Later']
-// };
+const Map<String, List<String>> suggestions_intro = {
+  'What is your name?': [
+    'My name is ----',
+    'How are you doing?',
+  ],
+  'How are you doing?': [
+    'I am fine, thank you.',
+  ],
+  'My name is ----': [
+    "What is your name?",
+    "What do you do?",
+    "'How are you doing?'"
+  ],
+  "Could you please speak slowly?": ["Can you repeat what you just said?"],
+  'Where do you live?': ["I live at ------", "What do you do?"],
+  'Do you want to get food?': ['Where are you going', 'Goodbye.'],
+  'Can you repeat what you just said?': [
+    'Could you please speak slowly?',
+    'I understand.'
+  ],
+  "I live at ------": ['Where do you live?', "What do you do?"],
+  "What do you do?": ['I work as a --------'],
+  "I work as a --------": ["What do you do?", "Where do you live?"],
+  "Can you help me?": ["Thank you", "I understand."],
+  "Can you give me your phone number": ["I am sorry"],
+  "Thank you": ["Nice to meet you.", "Goodbye."],
+  "I am sorry": ["Goodbye.", "Thank you"],
+  "I understand.": ["Thank you", "Goodbye."],
+  "Goodbye": ["Thank you", "Nice to meet you."],
+  "I do not understand.": ["Could you please speak slowly?", "I understand."],
+  "Nice to meet you.": ["Thank you", "Goodbye."],
+  "Come with me.": [
+    "Where are you going",
+    "I am going to -----, would you like to come?"
+  ],
+  "Where are you going": ["I am going to -----, would you like to come?"],
+  "What are you doing": ["I am doing -------"],
+  "I am going to -----, would you like to come?": [
+    "Where are you going",
+    "Come with me."
+  ],
+  "I am doing -------": ["What are you doing"]
+};

@@ -24,6 +24,9 @@ class SelectModule extends StatelessWidget {
         body: Column(
           children: [
             InstituteLogos(),
+            SizedBox(
+              height: SizeConfig.getScreenSize(context).height * 0.1,
+            ),
             Ask_to_Select_Module(),
             SizedBox(
               height: SizeConfig.getScreenSize(context).height * 0.05,

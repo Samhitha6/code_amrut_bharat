@@ -6,7 +6,6 @@ import 'package:amrut_bharat/home_screen/widgets/follow_up_hint.dart';
 import 'package:amrut_bharat/home_screen/widgets/follow_up_text.dart';
 //import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 import 'package:get/get.dart';
 
 class TranslateButtonAndOptions extends StatefulWidget {
@@ -43,10 +42,12 @@ class _TranslateButtonAndOptionsState extends State<TranslateButtonAndOptions> {
         children: [
           ElevatedButton(
             onPressed: () {
+              print(
+                  "Sentence-> ${widget.sentence},trans_module->${widget.translations_module[widget.languageSelected]},lang->${widget.languageSelected}");
               hsc.setEnglishSentence(widget.sentence);
               print("English sentence -> ${hsc.englishSentence.value}");
 
-              hsc.setDialogBoxTranslation(translations_intro[
+              hsc.setDialogBoxTranslation(widget.translations_module[
                   widget.languageSelected]![hsc.englishSentence.value]!);
               print(
                   "Dialogbox translation -> ${hsc.dialogBoxTranslation.value}");

@@ -1,28 +1,28 @@
 const List<String> englishSentences_market = [
   "I want to buy this.",
   "I want to return this.",
-  "How much does this cost ",
-  "1 Kg ",
-  "500 Grams ",
-  "100 Rupees ",
-  "50 Rupees ",
-  "10 Rupees ",
-  "Where can I find ----- ",
-  "can i get --- for -- much ",
-  "What can --- do? ",
-  "are there any other colors? ",
-  "is there a larger size? ",
-  "is there a smaller size?  ",
-  "can you show me similar products? ",
-  "can I pay cash? ",
-  "is this the product you were looking for ? ",
-  "Can I pay through card ? ",
-  "Will it be available tomorrow ? ",
-  "Do you do home delivery? ",
-  "Is there any discount? ",
-  "Can I exchange this ?",
-  "can you help me? ",
-  "Where is the shopping cart? "
+  "How much does this cost",
+  "1 Kg",
+  "500 Grams",
+  "100 Rupees",
+  "50 Rupees",
+  "10 Rupees",
+  "Where can I find -----",
+  "can i get --- for -- much",
+  "What can --- do?",
+  "are there any other colors?",
+  "is there a larger size?",
+  "is there a smaller size?",
+  "can you show me similar products?",
+  "can I pay cash?",
+  "is this the product you were looking for?",
+  "Can I pay through card?",
+  "Will it be available tomorrow?",
+  "Do you do home delivery?",
+  "Is there any discount?",
+  "Can I exchange this?",
+  "can you help me?",
+  "Where is the shopping cart?"
 ];
 const Map<String, Map<String, String>> translations_market = {
   "Hindi": {
@@ -30,40 +30,40 @@ const Map<String, Map<String, String>> translations_market = {
         'मैं इसे खरीदना चाहता हूँ(main ise khareedana chaahata hoon.)',
     "I want to return this.":
         'मैं इसे वापस देना चाहता हूं(main ise vaapas dena chaahata hoon)',
-    "How much does this cost ": 'इस की कीमत क्या होगी(is kee keemat kya hogee)',
-    "1 Kg ": '1 किलोग्राम(1 kilograam)',
-    "500 Grams ": '५०० ग्राम(500 graam)',
-    "100 Rupees ": '१०० रुपये(100 rupaye)',
-    "50 Rupees ": '५० रुपये(50 rupaye)',
-    "10 Rupees ": '१० रुपये(10 rupaye)',
-    "Where can I find ----- ":
+    "How much does this cost": 'इस की कीमत क्या होगी(is kee keemat kya hogee)',
+    "1 Kg": '1 किलोग्राम(1 kilograam)',
+    "500 Grams": '५०० ग्राम(500 graam)',
+    "100 Rupees": '१०० रुपये(100 rupaye)',
+    "50 Rupees": '५० रुपये(50 rupaye)',
+    "10 Rupees": '१० रुपये(10 rupaye)',
+    "Where can I find -----":
         'मैं कहा ढून्ढ सकता हूँ -----(main kaha dhoondh sakata hoon -----)',
-    "can i get --- for -- much ": '--',
-    "What can --- do? ": '--',
-    "are there any other colors? ":
+    "can i get --- for -- much": '--',
+    "What can --- do?": '--',
+    "are there any other colors?":
         'क्या कोई अन्य रंग हैं?(kya koee any rang hain?)',
-    "is there a larger size? ":
+    "is there a larger size?":
         'क्या कोई बड़ा आकार है?(kya koee bada aakaar hai?)',
-    "is there a smaller size?  ":
+    "is there a smaller size?":
         'क्या कोई छोटा आकार है?(kya koee chhota aakaar hai?)',
-    "can you show me similar products? ":
+    "can you show me similar products?":
         'क्या आप मुझे ऐसे ही उत्पाद दिखा सकते हैं(kya aap mujhe aise hee utpaad dikha sakate hain)',
-    "can I pay cash? ":
+    "can I pay cash?":
         'क्या मैं नकद भुगतान कर सकता हूँ?(kya main nakad bhugataan kar sakata hoon?)',
-    "is this the product you were looking for ? ":
+    "is this the product you were looking for?":
         'क्या यह वह उत्पाद है जिसकी आपको तलाश थी?(kya yah vah utpaad hai jisakee aapako talaash thee?)',
-    "Can I pay through card ? ":
+    "Can I pay through card?":
         'क्या मैं कार्ड से भुगतान कर सकता हूँ?(kya main kaard se bhugataan kar sakata hoon?)',
-    "Will it be available tomorrow ? ":
+    "Will it be available tomorrow?":
         'क्या यह कल उपलब्ध होगा?(kya yah kal upalabdh hoga?)',
-    "Do you do home delivery? ":
+    "Do you do home delivery?":
         'क्या आप होम डिलीवरी करते हैं?(kya aap hom dileevaree karate hain?)',
-    "Is there any discount? ": 'क्या कोई छूट है?(kya koee chhoot hai?)',
-    "Can I exchange this ?":
+    "Is there any discount?": 'क्या कोई छूट है?(kya koee chhoot hai?)',
+    "Can I exchange this?":
         'क्या मैं इसका आदान-प्रदान कर सकता हूं?(kya main isaka aadaan-pradaan kar sakata hoon?)',
-    "can you help me? ":
+    "can you help me?":
         'क्या आप मेरी मदद कर सकते हैं?(kya aap meree madad kar sakate hain?)',
-    "Where is the shopping cart? ":
+    "Where is the shopping cart?":
         'खरीदारी की टोकरी कहाँ है?(khareedaaree kee tokaree kahaan hai?)'
   },
   "Telugu": {
@@ -71,35 +71,34 @@ const Map<String, Map<String, String>> translations_market = {
         'నేను దీన్ని కొనాలనుకుంటున్నాను(Nēnu dīnni konālanukuṇṭunnānu)',
     "I want to return this.":
         'నేను దీన్ని తిరిగి ఇవ్వాలనుకుంటున్నాను(Nēnu dīnni tirigi ivvālanukuṇṭunnānu)',
-    "How much does this cost ": 'దీని ధర ఎంత(Dīni dhara enta)',
-    "1 Kg ": '1 కిలోలు(1 Kilōlu)',
-    "500 Grams ": '500 గ్రాములు(500 Grāmulu)',
-    "100 Rupees ": '100 రూపాయలు(100 Rūpāyalu)',
-    "50 Rupees ": '50 రూపాయలు(50 Rūpāyalu)',
-    "10 Rupees ": '10 రూపాయలు(10 Rūpāyalu)',
-    "Where can I find ----- ":
+    "How much does this cost": 'దీని ధర ఎంత(Dīni dhara enta)',
+    "1 Kg": '1 కిలోలు(1 Kilōlu)',
+    "500 Grams": '500 గ్రాములు(500 Grāmulu)',
+    "100 Rupees": '100 రూపాయలు(100 Rūpāyalu)',
+    "50 Rupees": '50 రూపాయలు(50 Rūpāyalu)',
+    "10 Rupees": '10 రూపాయలు(10 Rūpāyalu)',
+    "Where can I find -----":
         'నేను ఎక్కడ కనుగొనగలను -----(Nēnu ekkaḍa kanugonagalanu -----)',
-    "can i get --- for -- much ": '--',
-    "What can --- do? ": '--',
-    "are there any other colors? ":
-        'ఇతర రంగులు ఉన్నాయా?(Itara raṅgulu unnāyā?)',
-    "is there a larger size? ": 'పెద్ద పరిమాణం ఉందా?(Pedda parimāṇaṁ undā?)',
-    "is there a smaller size?  ": 'చిన్న పరిమాణం ఉందా?(Cinna parimāṇaṁ undā?)',
-    "can you show me similar products? ":
+    "can i get --- for -- much": '--',
+    "What can --- do?": '--',
+    "are there any other colors?": 'ఇతర రంగులు ఉన్నాయా?(Itara raṅgulu unnāyā?)',
+    "is there a larger size?": 'పెద్ద పరిమాణం ఉందా?(Pedda parimāṇaṁ undā?)',
+    "is there a smaller size?": 'చిన్న పరిమాణం ఉందా?(Cinna parimāṇaṁ undā?)',
+    "can you show me similar products?":
         'మీరు నాకు ఇలాంటి ఉత్పత్తులను చూపించగలరా?(Mīru nāku ilāṇṭi utpattulanu cūpin̄cagalarā?)',
-    "can I pay cash? ": 'నేను నగదు చెల్లించవచ్చా?(Nēnu nagadu cellin̄cavaccā?)',
-    "is this the product you were looking for ? ":
+    "can I pay cash?": 'నేను నగదు చెల్లించవచ్చా?(Nēnu nagadu cellin̄cavaccā?)',
+    "is this the product you were looking for?":
         'ఇది మీరు వెతుకుతున్న ఉత్పత్తినా?(Idi mīru vetukutunna utpattinā?)',
-    "Can I pay through card ? ":
+    "Can I pay through card?":
         'నేను కార్డు ద్వారా చెల్లించవచ్చా?(Nēnu kārḍu dvārā cellin̄cavaccā?)',
-    "Will it be available tomorrow ? ":
+    "Will it be available tomorrow?":
         'ఇది రేపు అందుబాటులో ఉంటుందా?(Idi rēpu andubāṭulō uṇṭundā?)',
-    "Do you do home delivery? ":
+    "Do you do home delivery?":
         'మీరు హోమ్ డెలివరీ చేస్తున్నారా?(Mīru hōm ḍelivarī cēstunnārā?)',
-    "Is there any discount? ": 'ఏదైనా తగ్గింపు ఉందా?(Ēdainā taggimpu undā?)',
-    "Can I exchange this ?":
+    "Is there any discount?": 'ఏదైనా తగ్గింపు ఉందా?(Ēdainā taggimpu undā?)',
+    "Can I exchange this?":
         'నేను దీన్ని మార్పిడి చేయవచ్చా?(Nēnu dīnni mārpiḍi cēyavaccā?)',
-    "can you help me? ":
+    "can you help me?":
         'మీరు నాకు సహాయం చేయగలరా?(Mīru nāku sahāyaṁ cēyagalarā?)',
     "Where is the shopping cart?":
         'షాపింగ్ కార్ట్ ఎక్కడ ఉంది?(Ṣāpiṅg kārṭ ekkaḍa undi?)'
@@ -124,7 +123,7 @@ const Map<String, Map<String, String>> translations_market = {
     "is there a larger size?":
         "ஒரு பெரிய அளவு இருக்கிறதா? (Oru periya aḷavu irukkiṟatā?)",
     "is there a smaller size?": "சிறிய அளவு உள்ளதா? (Ciṟiya aḷavu uḷḷatā?)",
-    "can you show me similar products":
+    "can you show me similar products?":
         "இதே போன்ற தயாரிப்புகளை எனக்குக் காட்ட முடியுமா? (Itē pōṉṟa tayārippukaḷai eṉakkuk kāṭṭa muṭiyumā?)",
     "Can I pay cash?": "நான் பணம் செலுத்தலாமா? (Nāṉ paṇam celuttalāmā?)",
     "is this the product you were looking for?":
@@ -158,8 +157,8 @@ const Map<String, Map<String, String>> translations_market = {
     "what can --- do?": " ()",
     "are there any other colors?": "অন্য কোন রঙ আছে? (An'ya kōna raṅa āchē?)",
     "is there a larger size?": "বড় আকার আছে? (Baṛa ākāra āchē?)",
-    "is there a smaller size?": "একটি ছোট আকার আছে? ()",
-    "can you show me similar products":
+    "is there a smaller size?": "একটি ছোট আকার আছে? (Choto ākāra āchē?)",
+    "can you show me similar products?":
         "আপনি কি আমাকে অনুরূপ পণ্য প্রদর্শন করতে পারেন? (Āpani ki āmākē anurūpa paṇya pradarśana karatē pārēna?)",
     "Can I pay cash?": "আমি নগদ দিতে পারি? (Āmi nagada ditē pāri?)",
     "is this the product you were looking for?":
@@ -197,7 +196,7 @@ const Map<String, Map<String, String>> translations_market = {
     "is there a larger size?":
         "ഒരു വലിയ വലുപ്പം ഉണ്ടോ? (oru valiya valuppaṁ uṇṭēā?)",
     "is there a smaller size?": "ചെറിയ വലിപ്പമുണ്ടോ? (ceṟiya valippamuṇṭēā?)",
-    "can you show me similar products":
+    "can you show me similar products?":
         "നിങ്ങൾക്ക് സമാന ഉൽപ്പന്നങ്ങൾ കാണിക്കാമോ? (niṅṅaḷkk samāna ulppannaṅṅaḷ kāṇikkāmēā?)",
     "Can I pay cash?": "എനിക്ക് പണം നൽകാമോ? (enikk paṇaṁ nalkāmēā?)",
     "is this the product you were looking for?":
@@ -234,7 +233,7 @@ const Map<String, Map<String, String>> translations_market = {
     "are there any other colors?": "ಬೇರೆ ಬಣ್ಣಗಳಿವೆಯೇ? (Bēre baṇṇagaḷiveyē?)",
     "is there a larger size?": "ದೊಡ್ಡ ಗಾತ್ರವಿದೆಯೇ? (Doḍḍa gātravideyē?)",
     "is there a smaller size?": "ಸಣ್ಣ ಗಾತ್ರವಿದೆಯೇ? (Saṇṇa gātravideyē?)",
-    "can you show me similar products":
+    "can you show me similar products?":
         "ನೀವು ನನಗೆ ಇದೇ ರೀತಿಯ ಉತ್ಪನ್ನಗಳನ್ನು ತೋರಿಸಬಹುದೇ? (Nīvu nanage idē rītiya utpannagaḷannu tōrisabahudē?)",
     "Can I pay cash?":
         "ನಾನು ಹಣವನ್ನು ಪಾವತಿಸಬಹುದೇ? (Nānu haṇavannu pāvatisabahudē?)",
@@ -274,7 +273,7 @@ const Map<String, Map<String, String>> translations_market = {
         "इतर कोणतेही रंग आहेत? (Itara kōṇatēhī raṅga āhēta?)",
     "is there a larger size?": "तेथे मोठे आकार आहे? (Tēthē mōṭhē ākāra āhē?)",
     "is there a smaller size?": "एक लहान आकार आहे? (Ēka lahāna ākāra āhē?)",
-    "can you show me similar products":
+    "can you show me similar products?":
         "आपण मला समान उत्पादने दर्शवू शकता? (Āpaṇa malā samāna utpādanē darśavū śakatā?)",
     "Can I pay cash?": "मी पैसे देऊ शकतो का? (Mī paisē dē'ū śakatō kā?)",
     "is this the product you were looking for?":

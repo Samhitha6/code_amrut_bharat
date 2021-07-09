@@ -15,8 +15,11 @@ class GridViewOfModules extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.all(10),
+        margin: EdgeInsets.only(
+            right: SizeConfig.getScreenSize(context).width * 0.1,
+            left: SizeConfig.getScreenSize(context).width * 0.1),
         child: GridView.builder(
+            shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 200,
                 childAspectRatio: 3 / 2,
@@ -40,7 +43,7 @@ class GridViewOfModules extends StatelessWidget {
                           color: Colors.black,
                           fontFamily: treMS,
                           fontWeight: FontWeight.bold,
-                          fontSize: SizeConfig.blockSizeHorizontal * 2),
+                          fontSize: SizeConfig.blockSizeHorizontal * 1.8),
                     ),
                   ),
                 ),

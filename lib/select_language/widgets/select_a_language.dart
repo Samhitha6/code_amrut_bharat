@@ -12,6 +12,7 @@ class SelectALanguage extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(10),
       child: Text('Please select the language you want to learn.',
+          textAlign: TextAlign.center,
           style: TextStyle(
               fontFamily: treMS,
               fontWeight: FontWeight.bold,
