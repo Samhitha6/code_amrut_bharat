@@ -292,3 +292,88 @@ const Map<String, Map<String, String>> translations_market = {
         "शॉपिंग कार्ट कुठे आहे? (Śŏpiṅga kārṭa kuṭhē āhē?)",
   }
 };
+
+
+const Map<String, List<String>> suggestions_market = {
+  "I want to buy this.": [
+    'How much does this cost',
+    'Can I get --- for ----- much?'
+  ],
+  "I want to return this.": [
+    'Can you help me',
+    'Can you show me similar products'
+  ],
+  "How much does this cost": ['Can I pay in cash?', ' Is there any discount?'],
+  "1 Kg": ['500 grams', ' 100 Rupees'],
+  "500 Grams": ['1 kg', ' 100 rupees'],
+  "100 Rupees": ['10 rupees', ' 50 rupees'],
+  "50 Rupees": ['10 rupees',
+  ' 100 rupees'],
+  "10 Rupees":[
+    '100 rupees',
+    ' 50 rupees'
+  ],
+  "Where can I find -----":[
+    'Thank you'
+  ],
+  "can i get --- for -- much":[
+    'Is there any discount?',
+    ' Can I pay in cash?'
+  ],
+  "What can --- do?":[
+    'Can you show me similar products?',
+    ' are there any other colors?'
+  ],
+  "are there any other colors?":[
+    'Is there a larger size?',
+    ' Is there a smaller size?',
+    ' How much does this cost?'
+  ],
+  "is there a larger size?":[
+    'How much does this cost?',
+    ' Can you show me similiar products?'
+  ],
+  "is there a smaller size?":[
+    'How much does this cost?',
+    ' Can you show me similiar products?'
+  ],
+  "can you show me similar products?":[
+    'How much does this cost?',
+    ' Is there a larger size?',
+    ' Is there a smaller size?'
+  ],
+  "can I pay cash?":[
+    'Do you do home delivery?',
+    'Is there any discount?'
+  ],
+  "is this the product you were looking for?":[
+    'Thank you. I am sorry.'
+  ],
+  "Can I pay through card?":[
+    'Is there any discount?',
+    ' Can I pay cash?'
+  ],
+  "Will it be available tomorrow?":[
+    'Do you do home delivery?',' Is there any discount?'
+  ],
+  "Do you do home delivery?":[
+    'Can I pay cash?',
+    ' Can I pay through card?'
+  ],
+  "Is there any discount?":[
+    'Can I pay cash?',
+    ' Can I pay through card?'
+  ],
+  "Can I exchange this?":[
+    'Can you help me?',
+    ' Is there a larger size?',
+    ' Is there a smaller size?'
+  ],
+  "can you help me?":[
+    'Can I exchange this? ',
+    'Can you show me similar product?'
+  ],
+  "Where is the shopping cart?":[
+    'Can you help me?'
+  ]
+};
