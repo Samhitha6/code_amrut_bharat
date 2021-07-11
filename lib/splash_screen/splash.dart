@@ -100,8 +100,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: ElevatedButton(
                       onPressed: () {
                         //getVoices();
-                        synthesizeText("", Wavenet.BanglaVoiceGender);
-                        // Navigator.pushNamed(context, rSelectLanguage);
+                        Navigator.pushNamed(context, rSelectLanguage);
                       },
                       style: ElevatedButton.styleFrom(
                           shadowColor: Colors.black,

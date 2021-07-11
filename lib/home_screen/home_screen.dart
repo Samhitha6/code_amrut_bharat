@@ -47,36 +47,38 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     chooseEnglishLangByModule();
     chooseTranslatingLangByModule();
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          InstituteLogos(),
-          //CustomAppBar(title: "Amrut Bharat"),
-          Expanded(
-            child: ListView.builder(
-                itemCount: englishSentences_module.length,
-                itemBuilder: (context, index) => Container(
-                      margin: EdgeInsets.only(
-                          left: 50, right: 50, top: 10, bottom: 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        border: Border.all(color: Colors.greenAccent),
-                      ),
-                      child: ListTile(
-                        leading: LangIndicator(),
-                        title: EnglishSentence(
-                            index: index,
-                            englishSentences: englishSentences_module),
-                        trailing: TranslateButtonAndOptions(
-                          sentence: englishSentences_module[index],
-                          languageSelected: languageSelected,
-                          translations_module: translations_module,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Column(
+          children: [
+            InstituteLogos(),
+            //CustomAppBar(title: "Amrut Bharat"),
+            Expanded(
+              child: ListView.builder(
+                  itemCount: englishSentences_module.length,
+                  itemBuilder: (context, index) => Container(
+                        margin: EdgeInsets.only(
+                            left: 50, right: 50, top: 10, bottom: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          border: Border.all(color: Colors.greenAccent),
                         ),
-                      ),
-                    )),
-          )
-        ],
+                        child: ListTile(
+                          leading: LangIndicator(),
+                          title: EnglishSentence(
+                              index: index,
+                              englishSentences: englishSentences_module),
+                          trailing: TranslateButtonAndOptions(
+                            sentence: englishSentences_module[index],
+                            languageSelected: languageSelected,
+                            translations_module: translations_module,
+                          ),
+                        ),
+                      )),
+            )
+          ],
+        ),
       ),
     );
   }
