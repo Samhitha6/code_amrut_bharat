@@ -13,6 +13,15 @@ class InstituteLogos extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
+          ),
           Image.asset(
             'assets/NITW_LOGO_BLACK@2x.png',
             height: SizeConfig.getScreenSize(context).height * 0.1,

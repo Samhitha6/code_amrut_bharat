@@ -237,7 +237,9 @@ const Map<String, Map<String, String>> translations_food = {
         "இப்போது சுவையான ஒன்றை சாப்பிடுகிறீர்களா? (Ippōtu cuvaiyāṉa oṉṟai cāppiṭukiṟīrkaḷā?)",
     "Do you have ---": "உங்களிடம் --- (Uṅkaḷiṭam ---)",
   },
-  "Bengali": {
+
+  "Bangla": {
+
     "How long will my food take":
         "আমার খাবার কতক্ষণ লাগবে (Āmāra khābāra katakṣaṇa lāgabē)",
     "Can you pack my food as take-away":
@@ -272,6 +274,7 @@ const Map<String, Map<String, String>> translations_food = {
     "Do you have ---": "তোমার আছে কি --- (Tōmāra āchē ki ---)",
   }
 };
+
 
 const Map<String, List<String>> suggestions_food = {
   'How long will my food take': ['Thank you', 'Can I get some water?'],
@@ -338,18 +341,6 @@ const Map<String, List<String>> suggestions_food = {
   ],
 };
 
-const Map<String, List<String>> audioFiles_intro = {
-  "Telugu": [
-    'assets/audio/my name.mp4',
-    'assets/audio/good morning.mp4',
-    'assets/audio/are you vaccinated.mp4',
-    'assets/audio/i need to get vaccinated.mp4',
-    'assets/audio/i have been vaccinated.mp4',
-    "assets/audio/how are you.mp4",
-    "assets/audio/what is your name.mp4",
-    "assets/audio/see you later.mp4"
-  ]
-};
 
 // const Map<String, List<String>> suggestions_intro = {
 //   'My Name is ___': [
