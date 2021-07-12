@@ -237,7 +237,9 @@ const Map<String, Map<String, String>> translations_food = {
         "இப்போது சுவையான ஒன்றை சாப்பிடுகிறீர்களா? (Ippōtu cuvaiyāṉa oṉṟai cāppiṭukiṟīrkaḷā?)",
     "Do you have ---": "உங்களிடம் --- (Uṅkaḷiṭam ---)",
   },
+
   "Bangla": {
+
     "How long will my food take":
         "আমার খাবার কতক্ষণ লাগবে (Āmāra khābāra katakṣaṇa lāgabē)",
     "Can you pack my food as take-away":
@@ -273,15 +275,89 @@ const Map<String, Map<String, String>> translations_food = {
   }
 };
 
-const Map<String, List<String>> audioFiles_intro = {
-  "Telugu": [
-    'assets/audio/my name.mp4',
-    'assets/audio/good morning.mp4',
-    'assets/audio/are you vaccinated.mp4',
-    'assets/audio/i need to get vaccinated.mp4',
-    'assets/audio/i have been vaccinated.mp4',
-    "assets/audio/how are you.mp4",
-    "assets/audio/what is your name.mp4",
-    "assets/audio/see you later.mp4"
-  ]
+
+const Map<String, List<String>> suggestions_food = {
+  'How long will my food take': ['Thank you', 'Can I get some water?'],
+  'Can you pack my food as take-away': [
+    'Whats the price of ---?',
+    'Is it spicy',
+    'Can I get the menu?'
+  ],
+  'Do you make it fresh': [
+    'Whats the price of ---?',
+    'Is it spicy',
+    'Can I get the menu?'
+  ],
+  'Are there any specials on the menu?': [
+    'Whats the price of ---?',
+    'Is it spicy',
+    'Can I get the menu?'
+  ],
+  'Can you retake my order': [
+    'Are there any specials on the menu?',
+    'Whats the price of ---'
+  ],
+  'Can i get extra ---(ketchup)?': ['Thank you.'],
+  'The food is great here': ['Thank you.'],
+  'Did you like the food here': [
+    'Thank you for having us.',
+    'We loved the dinner.'
+  ],
+  'Does this place offer delivery?': [
+    'I want to order my food now.',
+    'Can I get the menu?'
+  ],
+  'Is this healthy?': ['Is it spicy?', 'Can you retake my order?'],
+  'Can I get some water': [
+    'Thank you.',
+    'Can I get the menu?',
+    'I want to order my food now.'
+  ],
+  'I want to order my food now': [
+    'Are there any specials on the menu?',
+    'Whats the price of ---'
+  ],
+  'Is it spicy?': ['Is it healthy?', 'Can your retake my order?'],
+  'Whats the price of ---': [
+    'Is it spicy?',
+    'Is this vegetarian?',
+    'Can you retake my order?'
+  ],
+  'I suggest you eat -- here.': ['Can you retake my order?', 'Thank you.'],
+  'Can I get the menu': ['Thank you.', 'I want to order my food now.'],
+  'Thank you for having us. We loved the dinner.': [
+    'Nice to meet you.',
+    'Goodbye.'
+  ],
+  'Is this vegetarian ?': ['Is it spicy?'],
+  'Eating something delicious right now?': [
+    'Thank you for having us.',
+    'We loved it.'
+  ],
+  'Do you have ---': [
+    'Whats the price of ---?',
+    'Is it spicy',
+    'Can I get the menu?'
+  ],
 };
+
+
+// const Map<String, List<String>> suggestions_intro = {
+//   'My Name is ___': [
+//     'What Is Your Name?',
+//     'How Are You Doing?',
+//   ],
+//   'Good Morning!': [
+//     'How Are You Doing?',
+//     'What Is Your Name?',
+//     'Are You Vaccinated?',
+//     'See You Later'
+//   ],
+//   'Are You Vaccinated?': ['How Are You Doing?'],
+//   "I will get vaccinated": ["Are You Vaccinated?"],
+//   'I am vaccinated': ["Are You Vaccinated"],
+//   'How Are You Doing?': ['Are You Vaccinated?', 'See You Later'],
+//   'What Is Your Name?': ['How Are You Doing?', 'Are You Vaccinated?'],
+//   "See You Later": ['Okay'],
+//   "Okay": ['See You Later']
+// };

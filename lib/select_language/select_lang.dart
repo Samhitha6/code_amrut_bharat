@@ -14,7 +14,7 @@ class SelectLanguage extends StatelessWidget {
     Language.Hindi,
     Language.Kannada,
     Language.Malayalam,
-    Language.Marathi,
+    //Language.Marathi,
     Language.Tamil,
     Language.Telugu
   ];
